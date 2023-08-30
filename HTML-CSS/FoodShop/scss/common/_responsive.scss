@@ -1,0 +1,269 @@
+@media screen and (max-width: 1399.98px) {
+  .hero {
+    .hero-text {
+      h1 {
+        font-size: 3.4rem;
+      }
+      h2 {
+        margin-top: 10px;
+        font-size: 4rem;
+      }
+    }
+
+    .hero-image {
+      img {
+        width: 420px;
+      }
+
+      span {
+        font-size: 14rem;
+        left: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .hero {
+    .hero-image {
+      img {
+        width: 380px;
+      }
+      span {
+        font-size: 12rem;
+        left: 10px;
+        margin-bottom: 100px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1120.98px) {
+  .hero {
+    .hero-image {
+      span {
+        font-size: 10rem;
+        left: 0;
+        margin-bottom: 100px;
+      }
+      img {
+        width: 350px;
+        left: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .header {
+    .logo {
+      text-align: center;
+    }
+    .menu-toggle {
+      display: block;
+      label {
+        font-size: 2.5rem;
+        padding-left: 20px;
+      }
+    }
+
+    .header-nav {
+      .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        min-width: 250px;
+        z-index: 2;
+        background-color: $primaryColor;
+        translate: -101%;
+        transition: translate 0.4s ease;
+        ul {
+          display: block;
+          padding: 15px 0;
+          li {
+            a {
+              display: block;
+              color: #fff !important;
+              padding: 10px 15px;
+            }
+          }
+        }
+      }
+      .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(108, 108, 108, 0.5);
+        z-index: 1;
+        transition: 0.4s ease;
+        transition-property: opacity, visibility;
+      }
+      .cart-icon {
+        padding: 15px 0;
+      }
+      .search-icon {
+        padding-left: 10px;
+      }
+    }
+    input[type="checkbox"] {
+      &:checked {
+        ~ .menu {
+          translate: 0;
+        }
+
+        ~ .menu-overlay {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .hero {
+    .hero-text {
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      h1 {
+        font-size: 3.6rem;
+      }
+    }
+    .hero-image {
+      width: 100%;
+      border-radius: 16.667px 16.667px 16.667px 16.667px;
+      margin-top: 20px;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        margin: 0;
+        width: 500px;
+      }
+      span {
+        rotate: -45deg;
+        top: 32%;
+        left: 24%;
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // AboutGC
+  .main {
+    .info {
+      display: flex;
+      .title {
+        padding: 0;
+        margin: auto;
+      }
+    }
+  }
+  .about-info {
+    .container {
+      max-width: 880px;
+      .info {
+        justify-content: space-between;
+        img {
+          max-width: 300px;
+        }
+      }
+      .row-reverse {
+        justify-content: space-between;
+        p {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 892.98px) {
+  .hero {
+    .hero-image {
+      min-height: 600px;
+      span {
+        font-size: 8rem;
+      }
+    }
+  }
+  .about-info {
+    .container {
+      max-width: 800px;
+      .info {
+        justify-content: space-between;
+        img {
+          max-width: 300px;
+        }
+      }
+      .row-reverse {
+        justify-content: space-between;
+        p {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 805.98px) {
+  .about-info {
+    .container {
+      max-width: 700px;
+      .info {
+        justify-content: space-between;
+        img {
+          max-width: 300px;
+        }
+      }
+      .row-reverse {
+        justify-content: space-between;
+        p {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720.98px) {
+  .hero {
+    .hero-image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      max-height: 600px;
+      img {
+        width: 400px;
+        margin-top: 80px;
+      }
+      span {
+        position: static;
+        rotate: 0deg;
+      }
+    }
+  }
+  .about-info {
+    .container {
+      // max-width: 700px;
+      .info {
+        img {
+          display: none;
+        }
+      }
+      .row-reverse {
+        justify-content: space-between;
+        p {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

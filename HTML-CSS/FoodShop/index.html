@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -10,419 +10,686 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Food Shop</title>
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>GreenChop</title>
   </head>
   <body>
     <header class="header">
-      <!-- nav -->
-      <nav class="header-bar">
-        <div class="container">
-          <!-- logo-header -->
-          <div class="logo-grover">
-            <a href="#!" class="logo-link-grover">
-              <img
-                src="https://hoanganf8.github.io/htmlcss_project01/assets/images/logo.svg"
-                alt="logo"
-              />
-            </a>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-4 menu-toggle">
+            <label for="menu-toggle">
+              <i class="fa-solid fa-bars"></i>
+            </label>
           </div>
-
-          <!-- nav-link-header -->
-          <div class="menu-link">
-            <ul class="link">
-              <li><a href="#!">Home</a></li>
-              <li><a href="#!">Menu</a></li>
-              <li><a href="#!">Service</a></li>
-              <li><a href="#!">Shop</a></li>
-            </ul>
-
-            <!-- giỏ hàng và tìm kiếm -->
-            <div class="search-and-pay">
-              <span class="search"
-                ><i class="fa-solid fa-magnifying-glass"></i
-              ></span>
-              <input type="text" placeholder="Search" />
-              <span class="pay"><i class="fa-solid fa-cart-shopping"></i></span>
+          <div class="col-4 col-lg-2">
+            <div class="logo">
+              <a href="#">
+                <img src="assets/logo/logo.png" alt="logo" />
+              </a>
+              <!-- End .logo -->
+            </div>
+          </div>
+          <div class="col-4 col-lg-10">
+            <div class="header-nav">
+              <input type="checkbox" id="menu-toggle" hidden />
+              <label for="menu-toggle" class="menu-overlay"></label>
+              <nav class="menu">
+                <ul>
+                  <li class="active"><a href="./index.html">Trang chủ</a></li>
+                  <li><a href="./links/aboutGC.html">Về Greenchop</a></li>
+                  <li><a href="#">Sản phẩm</a></li>
+                  <li><a href="#">Tin tức</a></li>
+                  <li><a href="#">Liên hệ</a></li>
+                </ul>
+              </nav>
+              <!-- End .menu -->
+              <div class="cart-icon">
+                <a href="#">
+                  <img src="assets/icons/cart.svg" alt="cart-icon" />
+                  <span>3</span>
+                </a>
+              </div>
+              <!-- End .cart-icon -->
+              <div class="search-icon">
+                <img src="assets/icons/search.svg" alt="search-icon" />
+              </div>
+              <!-- End .header-nav -->
             </div>
           </div>
         </div>
-      </nav>
-
-      <!-- header-info -->
-      <div class="header-info">
+      </div>
+    </header>
+    <!-- End header -->
+    <section id="#home">
+      <div class="hero">
         <div class="container">
-          <div class="row">
-            <div class="responsive-content">
-              <div class="info-content">
-                <div class="top-info-content">
-                  <h3 class="top-info-content-title">More than Faster</h3>
-                  <span class="top-info-content-img">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6">
+              <div class="hero-text">
+                <h1>GreenChop: Tiện gấp dễ gắp</h1>
+                <h2>
+                  AN TOÀN HƠN <br />
+                  GIỮA MÙA COVID
+                </h2>
+                <p>
+                  GreenChop là sản phẩm đũa thay đầu duy nhất trên thị trường
+                  hiện tại. Sản phẩm cho phép người dùng tháo lắp và thay mới
+                  đầu đũa 100% trong mỗi bữa ăn. Nhờ đó, GreenChop giúp ngăn
+                  ngừa khả năng lây lan dịch bệnh và đảm bảo an toàn cho người
+                  dùng.
+                </p>
+              </div>
+              <!-- End .hero-text -->
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="hero-image">
+                <img src="./assets/images/hero-image.png" alt="hero-image" />
+                <span
+                  >GREEN <br />
+                  CHOP</span
+                >
+              </div>
+              <!-- End .hero-image -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End .hero -->
+    </section>
+    <!-- End section -->
+
+    <section>
+      <div class="achievements">
+        <div class="container">
+          <div class="achievements-header">
+            <h2>
+              GreenChop: Giữ an toàn trong từng <br />
+              bữa ăn của người Việt
+            </h2>
+            <p>
+              Với sự tinh tế trong việc thấu hiểu hành vi của khách hàng cùng ý
+              tưởng đột phá, GreenChop đã trở thành sản phẩm không thể thiếu
+              trong mọi bữa ăn mùa dịch tại các nhà hàng, khách sạn, quán ăn...
+            </p>
+          </div>
+          <!-- End .achievements-header -->
+          <div class="achievements-info">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                <div class="achievements-item item-left">
+                  <div class="achievements-image">
                     <img
-                      src="https://hoanganf8.github.io/htmlcss_project01/assets/images/strawberry.svg"
-                      alt="strawberry"
+                      src="./assets/icons/quality-white.svg"
+                      alt="icon-quality"
                     />
+                  </div>
+                  <span class="ranking">1000+</span>
+                  <span class="text">Hộ gia đình tin dùng GreenChop </span>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                <div class="achievements-item item-mid">
+                  <div class="achievements-image item-mid-image">
+                    <img
+                      src="./assets/icons/quality-white.svg"
+                      alt="icon-quality"
+                    />
+                  </div>
+                  <span class="ranking">600+</span>
+                  <span class="text"
+                    >Nhà hàng đã phục vụ GreenChop cho thực khách
                   </span>
                 </div>
-                <div class="text-title">
-                  <h1>
-                    Groceries delivered in as little as <span>2 hours</span>
-                  </h1>
-                  <p>
-                    Grocen atssures fresh grocery every morning to your family
-                    without getting out in this pandemic.
-                  </p>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                <div class="achievements-item item-right">
+                  <div class="achievements-image">
+                    <img
+                      src="./assets/icons/quality-white.svg"
+                      alt="icon-quality"
+                    />
+                  </div>
+                  <span class="ranking">20+</span>
+                  <span class="text">Tỉnh thành được GreenChop phủ sóng</span>
                 </div>
-
-                <!-- btn-wrap-header -->
-                <div class="btn-wrap-header">
-                  <div class="row-btn">
-                    <div class="responsive">
-                      <div class="btn-header">
-                        <a href="#!" class="link-btn-header">Order Now</a>
-                      </div>
-                    </div>
-
-                    <div class="responsive">
-                      <button class="btn-header-process">
-                        <span class="icon-play">
+              </div>
+            </div>
+          </div>
+          <!-- End .achievements-info -->
+        </div>
+      </div>
+      <!-- End .achievements -->
+    </section>
+    <!-- End section -->
+    <section>
+      <div class="products">
+        <div class="container">
+          <div class="header-products">
+            <h3>Sản phẩm</h3>
+          </div>
+          <div class="products-list">
+            <div class="item-left">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-lg-3 col-md-4 col-3">
+                  <div class="products-item-left-top">
+                    <div class="item">
+                      <div class="item-image">
+                        <a href="#!">
                           <img
-                            src="https://hoanganf8.github.io/htmlcss_project01/assets/images/button-play.svg"
-                            alt="play-icon"
-                          />
-                        </span>
-                        <span class="text-process">Order Process</span>
+                            src="./assets/images/product-donut.png"
+                            alt="Donut"
+                        /></a>
+                      </div>
+                      <a href="#!" class="title-item">
+                        Combo <br />
+                        Quán ăn
+                      </a>
+                      <p class="info-item">1 Thùng 1000 đôi</p>
+                      <p class="cost">Giá: <span>600.000</span> vnd</p>
+                      <button type="submit" class="btn">
+                        <a href="#!">Thêm vào giỏ hàng</a>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="products-item-left-bottom">
+                    <div class="item">
+                      <div class="item-image">
+                        <a href="#!">
+                          <img
+                            src="./assets/images/product-donut.png"
+                            alt="Donut"
+                        /></a>
+                      </div>
+                      <a href="#!" class="title-item">
+                        Combo <br />
+                        Gia đình bé xinh
+                      </a>
+                      <p class="info-item">1 Thùng 100 đôi</p>
+                      <p class="cost">Giá: <span>60.000</span> vnd</p>
+                      <button type="submit" class="btn">
+                        <a href="#!">Thêm vào giỏ hàng</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-4">
+                  <div class="products-item-mid-top">
+                    <div class="item">
+                      <div class="item-image">
+                        <a href="#!">
+                          <img
+                            src="./assets/images/product-dice.png"
+                            alt="Donut"
+                        /></a>
+                      </div>
+                      <a href="#!" class="title-item">
+                        Combo <br />
+                        Quán ăn - nhà hàng
+                      </a>
+                      <p class="info-item">1 Thùng 2000 đôi</p>
+                      <p class="cost">Giá: <span>1.200.000</span> vnd</p>
+                      <button type="submit" class="btn">
+                        <a href="#!">Thêm vào giỏ hàng</a>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="products-item-mid-bottom">
+                    <div class="item">
+                      <div class="item-image">
+                        <a href="#!">
+                          <img
+                            src="./assets/images/product-dice.png"
+                            alt="Donut"
+                        /></a>
+                      </div>
+                      <a href="#!" class="title-item">
+                        Combo <br />
+                        Gia đình
+                      </a>
+                      <p class="info-item">1 Thùng 200 đôi</p>
+                      <p class="cost">Giá: <span>120.000</span> vnd</p>
+                      <button type="submit" class="btn">
+                        <a href="#!">Thêm vào giỏ hàng</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-3">
+                  <div class="products-item-right-top">
+                    <div class="item">
+                      <div class="item-image">
+                        <a href="#!">
+                          <img
+                            src="./assets/images/product-game.png"
+                            alt="Donut"
+                        /></a>
+                      </div>
+                      <a href="#!" class="title-item">
+                        Combo Quán ăn <br />
+                        Nhà hàng - Khách sạn
+                      </a>
+                      <p class="info-item">1 Thùng 1000 đôi</p>
+                      <p class="cost">Giá: <span>600.000</span> vnd</p>
+                      <button type="submit" class="btn">
+                        <a href="#!">Thêm vào giỏ hàng</a>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="products-item-right-bottom">
+                    <div class="item">
+                      <div class="item-image">
+                        <a href="#!">
+                          <img
+                            src="./assets/images/product-game.png"
+                            alt="Donut"
+                        /></a>
+                      </div>
+                      <a href="#!" class="title-item">
+                        Combo <br />
+                        Đại gia đình
+                      </a>
+                      <p class="info-item">1 Thùng 300 đôi</p>
+                      <p class="cost">Giá: <span>180.000</span> vnd</p>
+                      <button type="submit" class="btn">
+                        <a href="#!">Thêm vào giỏ hàng</a>
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div class="image-content">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End section -->
+    <section class="section">
+      <div class="news">
+        <div class="container">
+          <h3>Tin tức</h3>
+          <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <p>
+                L nulla facilisis at vero eros et accumsan et iusto odio
+                dignissim qui blandit praesent luptatum zzril delenit augue duis
+                dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
+                cons ectetuer adipiscing
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="image-news">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <div class="picture">
+                <img src="./assets/images/news1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="picture">
+                <img src="./assets/images/news2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="picture">
+                <img src="./assets/images/news3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="date-rooms">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <div class="info">
+                <span>Lorem ipsum</span>
+                <div class="calendar">
+                  <img src="./assets/icons/calendar.svg" alt="" />
+                  <span>28-10-2021</span>
+                </div>
+              </div>
+              <div class="info-rooms">
+                <p class="title">
+                  Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit
+                </p>
+                <p class="info-title">
+                  Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on
+                  nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                  erat volutpat. Ut wisi enim...
+                </p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="info">
+                <span>Lorem ipsum</span>
+                <div class="calendar">
+                  <img src="./assets/icons/calendar.svg" alt="" />
+                  <span>28-10-2021</span>
+                </div>
+              </div>
+              <div class="info-rooms">
+                <p class="title">
+                  Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit
+                </p>
+                <p class="info-title">
+                  Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on
+                  nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                  erat volutpat. Ut wisi enim...
+                </p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="info">
+                <span>Lorem ipsum</span>
+                <div class="calendar">
+                  <img src="./assets/icons/calendar.svg" alt="" />
+                  <span>28-10-2021</span>
+                </div>
+              </div>
+              <div class="info-rooms">
+                <p class="title">
+                  Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit
+                </p>
+                <p class="info-title">
+                  Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on
+                  nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                  erat volutpat. Ut wisi enim...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn-news">
+        <span>Xem thêm</span>
+        <i class="fa-solid fa-chevron-right" id="icon-right"></i>
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      <!-- End .news -->
+      <div class="protected-user">
+        <div class="container title-protected-user">
+          <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+              <h3>GreenChop bảo vệ người dùng như thế nào</h3>
+            </div>
+            <div class="col-4"></div>
+          </div>
+        </div>
+        <div class="container text-protected-user">
+          <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <p>
+                Mỗi đôi đũa GreenChop gồm 2 phần thân đũa và đầu đũa. <br />
+                Người dùng có thể dễ dàng tách rời hoặc gắn liền 2 phần này với
+                nhau
+              </p>
+            </div>
+            <div class="col-3"></div>
+          </div>
+        </div>
+        <!-- End .title-protected-user -->
+        <div class="info-chopsticks">
+          <div class="container image-chopsticks">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-4 image-left">
+                <div class="image">
+                  <img src="./assets/images/info1.jpg" alt="" />
+                </div>
+                <div class="info-image-chopstick">
+                  <div class="text">
+                    <h4>01. Thân trên đũa</h4>
+                  </div>
+                  <p>
+                    Làm từ nhựa Melamine, đầy đủ điều kiện chứng nhận An toàn
+                    thực phẩm.
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 image-mid">
+                <div class="image">
+                  <img src="./assets/images/info2.jpg" alt="" />
+                </div>
+                <div class="info-image-chopstick">
+                  <h4>02. Đầu đũa</h4>
+                  <p>
+                    Được làm từ gỗ tre và bảo quản trong bọc khử trùng 100%,
+                    không hề có sự xâm nhập của vi khuẩn/vì rus gây hại. Người
+                    dùng là người đầu tiên chạm tay vào đầu đũa sau khi mở bọc.
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 image-right">
+                <div class="image">
+                  <img src="./assets/images/info3.jpg" alt="" />
+                </div>
+                <div class="info-image-chopstick">
+                  <h4>03. Khớp Inox 304</h4>
+                  <p>Khớp Inox 304 để gắn 2 phần đũa với nhau</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End .info-chopsticks -->
+      </div>
+      <!-- End .protected-user -->
+      <div class="quality">
+        <div class="quailty-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-1"></div>
+              <div class="col-3 quality-orange">
+                <div class="image">
+                  <img src="./assets/icons/quality-orange.svg" alt="" />
+                </div>
+                <div class="info-quality">
+                  <h5>Chất liệu an toàn</h5>
+                  <p>
+                    Phần đầu đũa được làm bằng bằng gỗ tre, đảm bảo cho sức khỏe
+                    người dùng
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 guard">
+                <div class="image">
+                  <img src="./assets/icons/guard.svg" alt="" />
+                </div>
+                <div class="info-quality">
+                  <h5>Vệ sinh và khử khuẩn</h5>
+                  <p>
+                    Đầu đũa mới 100% mỗi bữa ăn, không chung đụng đầu đũa với
+                    bất kì ai khác.
+                  </p>
+                </div>
+              </div>
+              <div class="col-3 like-star">
+                <div class="image">
+                  <img src="./assets/icons/vote-like.svg" alt="" />
+                </div>
+                <div class="info-quality">
+                  <h5>Tiện lợi</h5>
+                  <p>Thao tác tháo lắp nhanh gọn và đơn giản</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quailty-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-1"></div>
+              <div class="col-3 pig">
+                <div class="image">
+                  <img src="./assets/icons/pig.svg" alt="" />
+                </div>
+                <div class="info-quality">
+                  <h5>Tiết kiệm</h5>
+                  <p>Giá thành đầu đũa cạnh tranh và hợp lý.</p>
+                </div>
+              </div>
+              <div class="col-4 like">
+                <div class="image">
+                  <img src="./assets/icons/like.svg" alt="" />
+                </div>
+                <div class="info-quality">
+                  <h5>Độc quyền</h5>
+                  <p>
+                    GreenChop là sản phẩm đũa thay đầu duy nhất trên thị trường
+                    Việt Nam hiện tại
+                  </p>
+                </div>
+              </div>
+              <div class="col-3 car">
+                <div class="image">
+                  <img src="./assets/icons/car.svg" alt="" />
+                </div>
+                <div class="info-quality">
+                  <h5>Giao hàng nhanh</h5>
+                  <p>Giao hàng trong 24h</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End .quality -->
+      <div class="support">
+        <div class="container">
+          <div class="row">
+            <div class="col-5">
+              <div class="bkg-support"></div>
               <div class="image">
-                <img
-                  src="https://hoanganf8.github.io/htmlcss_project01/assets/images/header-img.png"
-                  alt="food"
-                />
+                <img src="./assets/images/person.png" alt="" />
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- section-delivery -->
-    <section class="section-delivery">
-      <div class="section-delivery-wrap">
-        <div class="container">
-          <div class="row-delivery">
-            <div class="delivery-top">
-              <h4>What we Serve</h4>
-              <h2>Fruit And Vegetable Delivered To Your Home</h2>
-            </div>
-          </div>
-
-          <!-- tag-delivery -->
-          <div class="tag-delivery">
-            <div class="row-item">
-              <div class="responsive-item">
-                <div class="item">
-                  <div class="item-change"></div>
-                  <div class="content-item">
-                    <div class="icon-item">
-                      <img
-                        src="https://hoanganf8.github.io/htmlcss_project01/assets/images/service-ic1.svg"
-                        alt="delivery-icon"
-                      />
-                    </div>
-                    <div class="item-text">
-                      <h3 class="item-tilte-text">Free shipping</h3>
-                      <p class="item-para-text">
-                        Enjoy Order in a hand using the fresness of groceries.
-                      </p>
-                    </div>
-                  </div>
+            <div class="col-1"></div>
+            <div class="col-6">
+              <div class="col-10">
+                <p>
+                  Bạn có bất kì thắc mắc nào. <br />
+                  Hãy để lại tin nhắn cho chúng tôi nhé!
+                </p>
+              </div>
+              <div class="name">
+                <input type="text" placeholder="Tên của bạn" />
+              </div>
+              <div class="email-and-tel">
+                <div class="email">
+                  <input type="email" placeholder="Email" />
+                </div>
+                <div class="tel">
+                  <input type="tel" placeholder="Số điện thoại" />
                 </div>
               </div>
-              <div class="responsive-item">
-                <div class="item">
-                  <div class="item-change"></div>
-                  <div class="content-item">
-                    <div class="icon-item">
-                      <img
-                        src="https://hoanganf8.github.io/htmlcss_project01/assets/images/service-ic2.svg"
-                        alt="delivery-icon"
-                      />
-                    </div>
-                    <div class="item-text">
-                      <h3 class="item-tilte-text">15 days returns</h3>
-                      <p class="item-para-text">
-                        Order in a handy way using the freshness of the
-                        groceries.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+              <div class="text">
+                <input type="text" placeholder="Nội dung" />
               </div>
-              <div class="responsive-item">
-                <div class="item">
-                  <div class="item-change"></div>
-                  <div class="content-item">
-                    <div class="icon-item">
-                      <img
-                        src="https://hoanganf8.github.io/htmlcss_project01/assets/images/service-ic3.svg"
-                        alt="delivery-icon"
-                      />
-                    </div>
-                    <div class="item-text">
-                      <h3 class="item-tilte-text">Secure checkout</h3>
-                      <p class="item-para-text">
-                        If you get rotten items - return immediately to us.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+              <div class="btn-support">
+                <button type="submit">Gửi</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- section-choose -->
-    <section class="section-choose">
-      <div class="section-choose-wrap">
-        <div class="container">
-          <div class="row-choose">
-            <div class="responsive-choose">
-              <div class="image-choose">
-                <img
-                  src="https://hoanganf8.github.io/htmlcss_project01/assets/images/feat.png"
-                  alt="melting cheese"
-                />
-              </div>
-            </div>
-            <div class="responsive-choose">
-              <div class="content-choose">
-                <div class="text-choose">
-                  <h3>WHY CHOOSE US</h3>
-                  <h2>Find Favorites And Discover New Ones</h2>
-                  <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus
-                    blanditiis praesen voluptatum deleniti.
-                  </p>
-                </div>
-                <div class="btn-choose">
-                  <a href="#!">Explore Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- section-bike -->
-    <section class="section-bike">
-      <div class="section-bike-wrap">
-        <div class="container">
-          <div class="row-bike">
-            <div class="responsive-bike">
-              <div class="content-bike">
-                <div class="text-bike">
-                  <h3>HOME DELIVERY</h3>
-                  <h2>Sit At Home We Will Take Care Your Order</h2>
-                  <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus
-                    qui blanditiis praesentium voluptatum deleniti atque
-                    corrupti quos
-                  </p>
-                </div>
-                <div class="btn-bike">
-                  <a href="#!">Explore Now</a>
-                </div>
-              </div>
-            </div>
-            <div class="responsive-bike">
-              <div class="image-bike">
-                <img
-                  src="https://hoanganf8.github.io/htmlcss_project01/assets/images/feat2.png"
-                  alt="bike delivery"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- section-download -->
-    <section class="section-download">
-      <div class="section-download-wrap">
-        <div class="container">
-          <div class="row-download">
-            <div class="responsive-download">
-              <div class="image-download">
-                <img
-                  src="https://hoanganf8.github.io/htmlcss_project01/assets/images/mobile.svg"
-                  alt="iphone"
-                />
-              </div>
-            </div>
-            <div class="responsive-download">
-              <div class="content-download">
-                <div class="text-download">
-                  <h3>Download our app</h3>
-                  <h2>Get The Groceries App Order More Easily.</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut.
-                  </p>
-                </div>
-              </div>
-
-              <!-- btn-download -->
-              <div class="source-download-btn">
-                <a href="#!" class="app">
-                  <span class="apple-icon">
-                    <img
-                      src="https://hoanganf8.github.io/htmlcss_project01/assets/images/apple.svg"
-                      alt="app store"
-                    />
-                  </span>
-                  App Store
-                </a>
-                <a href="#!" class="app">
-                  <span class="chplay-icon">
-                    <img
-                      src="https://hoanganf8.github.io/htmlcss_project01/assets/images/playstore.svg"
-                      alt="chplay"
-                    />
-                  </span>
-                  Play Store
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- footer -->
     <footer class="footer">
-      <div class="info-footer">
-        <div class="container">
-          <div class="info-footer-top">
-            <div class="row-footer">
-              <div class="responsive-footer">
-                <div class="footer-wrap-icon">
-                  <div class="icon-footer">
-                    <img
-                      src="https://hoanganf8.github.io/htmlcss_project01/assets/images/logo.svg"
-                      alt="Grover"
-                    />
-                  </div>
-                  <div class="text-footer">
-                    <p>
-                      Fast delivery, which is active all over the world, serves
-                      with many transportation vehicles.
-                    </p>
-                  </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-2">
+            <div class="introduce">
+              <div class="image">
+                <img src="./assets/logo/logo.png" alt="" />
               </div>
-
-              <!-- Company  -->
-              <div class="responsive-footer">
-                <div class="footer-wrap-info">
-                  <div class="company">
-                    <h4>Company</h4>
-                    <ul class="info-company">
-                      <li>
-                        <a href="#!">About us</a>
-                      </li>
-                      <li>
-                        <a href="#!">Blog</a>
-                      </li>
-                      <li>
-                        <a href="#!">All Products</a>
-                      </li>
-                      <li>
-                        <a href="#!">Locations Map</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Service  -->
-              <div class="responsive-footer">
-                <div class="footer-wrap-info">
-                  <div class="service">
-                    <h4>Services</h4>
-                    <ul class="info-service">
-                      <li>
-                        <a href="#!">Order tracking</a>
-                      </li>
-                      <li>
-                        <a href="#!">Wish List</a>
-                      </li>
-                      <li>
-                        <a href="#!">My account</a>
-                      </li>
-                      <li>
-                        <a href="#!">Terms & Conditions</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Get in Touch  -->
-              <div class="responsive-footer">
-                <div class="footer-wrap-info">
-                  <div class="get-touch">
-                    <h4>Get in Touch</h4>
-                    <div class="title-info-touch">
-                      <p class="info-touch">
-                        Subscribe to our weekly Newsletter and receive updates
-                        via email.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <p><span>GreenChop là bạn đồng hành</span> của người tiêu dùng</p>
             </div>
           </div>
+          <div class="col-1"></div>
+          <div class="col-2 main-web">
+            <h6>Trang chủ</h6>
+            <ul>
+              <li>Về greenchop</li>
+              <li>Sản phẩm</li>
+              <li>Tin tức</li>
+            </ul>
+          </div>
+          <div class="col-3 support-web">
+            <h6>Hỗ trợ</h6>
+            <ul>
+              <li>Đặt hàng trực tuyến (8h-22h)</li>
+              <li>
+                <img src="./assets/icons/alarm.svg" alt="" />
+                <span>Thứ 2 - Thứ 6</span>
+              </li>
+              <li>
+                <img src="./assets/icons/phone_outline.svg" alt="" />
+                <span>091 1717 222</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-2 contact">
+            <h6>Liên hệ</h6>
+            <ul>
+              <li>
+                <img src="./assets/icons/mail.svg" alt="" />
+                <span>greenchopvn@gmail.com</span>
+              </li>
+              <li>
+                <img src="./assets/icons/earth.svg" alt="" />
+                <span>Greenchop.vn</span>
+              </li>
+              <li>
+                <img src="./assets/icons/map.svg" alt="" />
+                <span>428 Điện Biên Phủ, P11, Quận 10, TPHCM</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-1"></div>
         </div>
       </div>
-
-      <!-- bottom-footer -->
-      <div class="bottom-footer">
+      <div class="hr">
         <div class="container">
-          <!-- hr -->
-          <div class="hr-footer">
-            <div class="hr">
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
               <hr />
             </div>
+            <div class="col-1"></div>
           </div>
-          <div class="other-support">
-            <div class="introduct">
-              <div class="year">
-                <p>All Rights Reserved @ BESNIK 2021</p>
+        </div>
+      </div>
+      <div class="footer-final">
+        <div class="container">
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+              <div class="verify">
+                <img src="./assets/images/verify.png" alt="" />
               </div>
-              <div class="protect">
-                <ul class="support">
-                  <li>
-                    <a href="#!">Terms & Conditions </a>
-                  </li>
-                  <li>
-                    <a href="#!"> Privacy & Policy</a>
-                  </li>
-                </ul>
+              <div class="items-link">
+                <div class="item">
+                  <img src="./assets/icons/youtube.svg" alt="" />
+                </div>
+                <div class="item">
+                  <img src="./assets/icons/facebook.svg" alt="" />
+                </div>
+                <div class="item">
+                  <img src="./assets/icons/instagram.svg" alt="" />
+                </div>
+                <div class="item">
+                  <img src="./assets/icons/twitter.png" alt="" />
+                </div>
               </div>
             </div>
+            <div class="col-1"></div>
           </div>
         </div>
       </div>

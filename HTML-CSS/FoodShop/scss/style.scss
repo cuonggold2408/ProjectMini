@@ -1,0 +1,28 @@
+// Import Parts
+
+@import "parts/variables";
+@import "parts/reset";
+@import "parts/base";
+@import "parts/font";
+@import "parts/mixin";
+
+// Import Layouts
+@import "layouts/footer";
+@import "layouts/header";
+
+// Import Pages
+
+// 1.Home
+@import "pages/home/hero";
+@import "pages/home/achievements";
+@import "pages/home/products";
+
+body {
+  overflow-x: hidden;
+}
+
+// 2.Về GreenChop
+@import "pages/info_greenchop/infoGreenChop";
+
+// Import responsive
+@import "common/responsive";
